@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y maven
 
 
 ENV JENKINS_REF /usr/share/jenkins/ref
-COPY jenkins-home/plugins.txt $JENKINS_REF/
+COPY jenkins-home/plugins $JENKINS_REF/
 
 ################# Plugins Set up start #################
 RUN mkdir -p $JENKINS_REF/plugins
