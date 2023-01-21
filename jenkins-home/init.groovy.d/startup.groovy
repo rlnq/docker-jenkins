@@ -12,9 +12,9 @@ buildJob('an-example-of-github-project')
 
 Logger.global.info("[Done] startup script")
 
-private void configureSecurity() {
-    Jenkins.getInstance().disableSecurity()
-}
+#private void configureSecurity() {
+#    Jenkins.getInstance().disableSecurity()
+#}
 
 #user
 def instance = Jenkins.getInstance()
