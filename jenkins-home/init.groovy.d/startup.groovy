@@ -1,4 +1,4 @@
-import jenkins.model.Jenkins
+import jenkins.model.*
 import hudson.model.*
 import java.util.logging.Logger
 
