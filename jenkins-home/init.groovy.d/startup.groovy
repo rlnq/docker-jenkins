@@ -4,8 +4,6 @@ import java.util.logging.Logger
 
 Logger.global.info("[Running] startup script")
 
-configureSecurity()
-
 def instance = Jenkins.getInstance()
 
 def hudsonRealm = new HudsonPrivateSecurityRealm(false)
