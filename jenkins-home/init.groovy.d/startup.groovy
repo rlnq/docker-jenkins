@@ -7,7 +7,7 @@ Logger.global.info("[Running] startup script")
 def instance = Jenkins.getInstance()
 
 def hudsonRealm = new HudsonPrivateSecurityRealm(false)
-hudsonRealm.createAccount("MyUSERNAME","MyPASSWORD")
+hudsonRealm.createAccount("jenkins-user","jenkins1234")
 instance.setSecurityRealm(hudsonRealm)
 
 def strategy = new hudson.security.FullControlOnceLoggedInAuthorizationStrategy()
