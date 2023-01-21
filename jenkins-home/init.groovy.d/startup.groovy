@@ -1,5 +1,10 @@
 import jenkins.model.*
 import hudson.security.*
+import java.util.logging.Logger
+
+Logger.global.info("[Running] startup script")
+
+configureSecurity()
 
 def instance = Jenkins.getInstance()
 
