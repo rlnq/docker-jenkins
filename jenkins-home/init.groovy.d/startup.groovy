@@ -16,6 +16,15 @@ private void configureSecurity() {
     Jenkins.getInstance().disableSecurity()
 }
 
+#user
+def instance = Jenkins.getInstance()
+
+def hudsonRealm = new HudsonPrivateSecurityRealm(false)
+hudsonRealm.createAccount("MyUSERNAME","MyPASSWORD")
+instance.setSecurityRealm(hudsonRealm)
+instance.save()
+#end user
+
 private def buildJob(String jobName) {
     Logger.global.info("Building job '$jobName")
     def job = Jenkins.instance.getJob(jobName)
