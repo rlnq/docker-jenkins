@@ -25,7 +25,7 @@ COPY jenkins-home/plugins $JENKINS_REF/
 
 ################# Plugins Set up start #################
 RUN mkdir -p $JENKINS_REF/plugins
-#COPY jenkins-home/plugins/* $JENKINS_REF/plugins/
+COPY jenkins-home/plugins/* $JENKINS_REF/plugins/
 ################# Plugins Set up ends #################
 
 COPY jenkins-home/*.* $JENKINS_REF/
